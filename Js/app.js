@@ -1,9 +1,15 @@
 // Gérer le rendu de monnaie
 function encaissement(){
 
-    let montantDonne = document.getElementById("montantClient").value;
-    let montantDu = document.getElementById("prixArticle").value;
-    
+    let montantDonne = parseFloat(document.getElementById("montantClient").value);
+    let montantDu = parseFloat(document.getElementById("prixArticle").value);
+
+    const isValid = isNumber(montantDonne, montantDu);
+
+    if (!isValid){
+        return document.getElementById("conteneurOutput").innerHTML = "Veuillez entrer des données valides !";
+    }
+
     const monnaieRendue = {};
 
     // Convertir les nombres à virgule en nombres entiers
