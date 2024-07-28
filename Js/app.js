@@ -130,3 +130,9 @@ function affichageMonnaie(monnaieRendue, monnaieRestant) {
     }
     return document.getElementById("conteneurOutput").innerHTML = text;
 }
+
+// Action du reset
+function reset(){
+    document.getElementById("montantClient").value = 0;
+    document.getElementById("prixArticle").value = 0;
+}
