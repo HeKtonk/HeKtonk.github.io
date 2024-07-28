@@ -3,10 +3,7 @@ function encaissement(){
 
     let montantDonne = document.getElementById("montantClient").value;
     let montantDu = document.getElementById("prixArticle").value;
-
-    console.log(isNumber(montantDonne, montantDu));
-    console.log(montantDonne);
-    console.log(montantDu);
+    
     const monnaieRendue = {};
 
     // Convertir les nombres à virgule en nombres entiers
@@ -14,7 +11,6 @@ function encaissement(){
     montantDonne = montantDonne * 100;
 
     let monnaie = montantDonne - montantDu;
-    console.log(monnaie);
 
     // Rendre la monnaie
     let nbBillet500 = monnaie / 50000;
