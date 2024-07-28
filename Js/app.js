@@ -135,4 +135,5 @@ function affichageMonnaie(monnaieRendue, monnaieRestant) {
 function reset(){
     document.getElementById("montantClient").value = 0;
     document.getElementById("prixArticle").value = 0;
+    document.getElementById("conteneurOutput").innerHTML = "";
 }
