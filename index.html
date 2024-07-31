@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset=utf-8 charset="UTF-8">
     <title>Encaissement</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="Js/app.js" defer></script>
+
 </head>
 <body>
 <div id="conteneurGeneral">
@@ -15,7 +16,7 @@
         <span>Prix de l'article</span>
         <input type="number" value="14.10" step=".01" id="prixArticle">
 
-        <button type="button" id="monnaie" onclick="encaissement()">Rendre la monnaie</button>
+        <button type="button" id="monnaie" onclick="encaissement(monnaie)">Rendre la monnaie</button>
         <button type="button" id="Reset" onclick="reset()">Reset</button>
     </section>
     <section id="conteneurOutput">
